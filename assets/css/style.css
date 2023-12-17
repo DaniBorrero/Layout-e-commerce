@@ -29,9 +29,6 @@ footer{
 }
 nav {
     width: 30vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
     border: 1px solid black;
 }
 
@@ -40,7 +37,11 @@ ul {
 }
 
 main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vh;
     width: 70vw;
+
 }
 
 header {
@@ -57,4 +58,15 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.card {
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+}
+
+.card > img {
+    height: 10vh;
+    width: 10vw;
 }
