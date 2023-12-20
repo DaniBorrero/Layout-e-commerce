@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
+
+.nav-bar {
+    background-color: #25527b;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: nav;
+}
+
+.aside-bar {
+    background-color: #e7e7e7;
+    padding-left: 4vh;
+    grid-area: aside;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    gap: 3vh;
+}
+
+h3 {
+    padding-top: 50px;
+}
+
+a{
+    color: black;
+    padding-left: 20px;
+    font-style: italic;
+}
+
+a:hover {
+    scale: 1.1;
+}
+.main {
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.button-buy {
+    background-color: #25527b;
+    width: 100%;
+    height: 30px;
+    border: none;
+    color: #fff;
+}
+
+.button-buy:hover {
+    background-color: #112b43;
+    cursor: pointer;
+}
+
+.foot {
+    background-color: #25527b;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: foot;
+    color: ;
+}
+
+.card > img {
+    width: 20vw;
+    height: 20vh;
+}
+
+.grid-container {
+    height: 100vh;
+    background-color: #fff;
+    display: grid;
+    grid-template-areas: 
+    "nav nav"
+    "aside main"
+    "foot foot"
+    ;
+}
